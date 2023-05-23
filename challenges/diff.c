@@ -3,14 +3,21 @@
 int main()
 {
     int t;
-    scanf("%d", &t); // Use scanf instead of cin in C
+    scanf("%d", &t);
 
     while (t--)
     {
-        int A, C;
-        scanf("%d %d", &A, &C); // Use scanf instead of cin in C
+        int A, C, B;
+        scanf("%d %d", &A, &C); 
+        if((A % 2 == 0 && C % 2 == 0 ) || (A % 2 != 0 && C % 2 != 0)){
+            B = (A+C) / 2;
+            printf("%d\n",B);
+        }
         
-        printf("%d %d\n",A,C);
+        else{
+            printf("-1");
+        }
+        
 
     }
 
